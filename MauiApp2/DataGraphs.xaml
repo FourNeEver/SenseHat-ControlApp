@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.DataGraphs"
+             Title="DataGraphs">
+    <ScrollView>
+    <Grid Margin="40,20,20,20"
+          RowSpacing="10"
+          ColumnSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <AbsoluteLayout Grid.Row="0"
+                        Grid.Column="0">
+            <Rectangle 
+                Fill="wHITE"
+                WidthRequest="630"
+                HeightRequest="220"/>
+            <Line
+                X1="0"
+                Y1="200"
+                X2="630"
+                Y2="200"
+                Stroke="#ACACAC"/>
+                <Line
+                X1="15"
+                Y1="100"
+                X2="630"
+                Y2="100"
+                Stroke="#ACACAC"/>
+                <Line
+                X1="15"
+                Y1="0"
+                X2="15"
+                Y2="220"
+                Stroke="#ACACAC"/>
+            <Polyline x:Name="GraphHumidity"
+                        
+                    Points="0,100"
+                    Stroke="Red"
+                    StrokeThickness="2"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    AbsoluteLayout.LayoutBounds="0,200,630,0"
+                    HeightRequest="200"
+                    WidthRequest="600" />
+            <Label 
+            Text="Humidity"   
+            TextColor="Black"
+            FontSize="Medium"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,0,630,50"/>
+                <Label 
+            Text="100%"   
+            TextColor="Black"
+            FontSize="Micro"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,80,70,50"/>
+                <Label 
+            Text="0%"   
+            TextColor="Black"
+            FontSize="Micro"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,200,55,20"/>
+            </AbsoluteLayout>
+        <AbsoluteLayout Grid.Row="0"
+                        Grid.Column="1">
+            <Rectangle 
+                Fill="wHITE"
+                WidthRequest="630"
+                HeightRequest="220"/>
+            <Line
+                X1="0"
+                Y1="200"
+                X2="630"
+                Y2="200"
+                Stroke="#ACACAC"/>
+                <Line
+                X1="15"
+                Y1="100"
+                X2="630"
+                Y2="100"
+                Stroke="#ACACAC"/>
+                <Line
+                X1="15"
+                Y1="0"
+                X2="15"
+                Y2="220"
+                Stroke="#ACACAC"/>
+            <Polyline x:Name="GraphPressure"
+                        
+                    Points="0,100"
+                    Stroke="Red"
+                    StrokeThickness="2"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    AbsoluteLayout.LayoutBounds="0,200,630,0"
+                    HeightRequest="200"
+                    WidthRequest="600" />
+            <Label 
+            Text="Pressure"   
+            TextColor="Black"
+            FontSize="Medium"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,0,630,50"/>
+                <Label 
+            Text="1260 hPa"   
+            TextColor="Black"
+            FontSize="Micro"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,80,100,50"/>
+                <Label 
+            Text="260 hPa"   
+            TextColor="Black"
+            FontSize="Micro"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,200,95,20"/>
+            </AbsoluteLayout>
+        <AbsoluteLayout Grid.Row="1"
+                        Grid.Column="0">
+            <Rectangle 
+                Fill="wHITE"
+                WidthRequest="630"
+                HeightRequest="220"/>
+            <Line
+                X1="0"
+                Y1="200"
+                X2="630"
+                Y2="200"
+                Stroke="#ACACAC"/>
+                <Line
+                X1="15"
+                Y1="100"
+                X2="630"
+                Y2="100"
+                Stroke="#ACACAC"/>
+                <Line
+                X1="15"
+                Y1="178"
+                X2="630"
+                Y2="178"
+                Stroke="#ACACAC"/>
+                <Line
+                X1="15"
+                Y1="0"
+                X2="15"
+                Y2="220"
+                Stroke="#ACACAC"/>
+            <Polyline x:Name="GraphTemperature"
+                        
+                    Points="0,100"
+                    Stroke="Red"
+                    StrokeThickness="2"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    AbsoluteLayout.LayoutBounds="0,177,630,0"
+                    HeightRequest="200"
+                    WidthRequest="600" />
+
+                <Label 
+            Text="Temperature"   
+            TextColor="Black"
+            FontSize="Medium"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,0,630,50"/>
+                <Label 
+            Text="105 C"   
+            TextColor="Black"
+            FontSize="Micro"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,80,70,50"/>
+                <Label 
+            Text="0 C"   
+            TextColor="Black"
+            FontSize="Micro"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,160,55,50"/>
+                <Label 
+            Text="-30 C"   
+            TextColor="Black"
+            FontSize="Micro"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,200,70,20"/>
+            </AbsoluteLayout>
+        <AbsoluteLayout Grid.Row="1"
+                        Grid.Column="1">
+            <Rectangle 
+                Fill="wHITE"
+                WidthRequest="630"
+                HeightRequest="220"/>
+            <Line
+                X1="0"
+                Y1="200"
+                X2="630"
+                Y2="200"
+                Stroke="#ACACAC"/>
+                <Line
+                X1="15"
+                Y1="100"
+                X2="630"
+                Y2="100"
+                Stroke="#ACACAC"/>
+                <Line
+                X1="15"
+                Y1="0"
+                X2="15"
+                Y2="220"
+                Stroke="#ACACAC"/>
+            <Polyline x:Name="PitchGraph"
+                        
+                    Points="0,100"
+                    Stroke="Red"
+                    StrokeThickness="2"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    AbsoluteLayout.LayoutBounds="0,200,630,0"
+                    HeightRequest="200"
+                    WidthRequest="600" />
+            <Label 
+            Text="Orientation(pitch)"   
+            TextColor="Black"
+            FontSize="Medium"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,0,630,50"/>
+                <Label 
+            Text="360"   
+            TextColor="Black"
+            FontSize="Micro"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,80,60,50"/>
+                <Label 
+            Text="0"   
+            TextColor="Black"
+            FontSize="Micro"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,200,55,20"/>
+            </AbsoluteLayout>
+        <AbsoluteLayout Grid.Row="2"
+                        Grid.Column="0">
+            <Rectangle 
+                Fill="wHITE"
+                WidthRequest="630"
+                HeightRequest="220"/>
+            <Line
+                X1="0"
+                Y1="200"
+                X2="630"
+                Y2="200"
+                Stroke="#ACACAC"/>
+                <Line
+                X1="15"
+                Y1="100"
+                X2="630"
+                Y2="100"
+                Stroke="#ACACAC"/>
+                <Line
+                X1="15"
+                Y1="0"
+                X2="15"
+                Y2="220"
+                Stroke="#ACACAC"/>
+            <Polyline x:Name="RollGraph"
+                        
+                    Points="0,100"
+                    Stroke="Red"
+                    StrokeThickness="2"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    AbsoluteLayout.LayoutBounds="0,200,630,0"
+                    HeightRequest="200"
+                    WidthRequest="600" />
+            <Label 
+            Text="Orientation(roll)"   
+            TextColor="Black"
+            FontSize="Medium"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,0,630,50"/>
+                <Label 
+            Text="360"   
+            TextColor="Black"
+            FontSize="Micro"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,80,60,50"/>
+                <Label 
+            Text="0"   
+            TextColor="Black"
+            FontSize="Micro"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,200,55,20"/>
+            </AbsoluteLayout>
+        <AbsoluteLayout Grid.Row="2"
+                        Grid.Column="1">
+            <Rectangle 
+                Fill="wHITE"
+                WidthRequest="630"
+                HeightRequest="220"/>
+            <Line
+                X1="0"
+                Y1="200"
+                X2="630"
+                Y2="200"
+                Stroke="#ACACAC"/>
+                <Line
+                X1="15"
+                Y1="100"
+                X2="630"
+                Y2="100"
+                Stroke="#ACACAC"/>
+                <Line
+                X1="15"
+                Y1="0"
+                X2="15"
+                Y2="220"
+                Stroke="#ACACAC"/>
+            <Polyline x:Name="YawGraph"
+                        
+                    Points="0,100"
+                    Stroke="Red"
+                    StrokeThickness="2"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    AbsoluteLayout.LayoutBounds="0,200,630,0"
+                    HeightRequest="200"
+                    WidthRequest="600" />
+            <Label 
+            Text="Orientation(yaw)"   
+            TextColor="Black"
+            FontSize="Medium"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,0,630,50"/>
+                <Label 
+            Text="360"   
+            TextColor="Black"
+            FontSize="Micro"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,80,60,50"/>
+                <Label 
+            Text="0"   
+            TextColor="Black"
+            FontSize="Micro"
+            HorizontalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0,200,55,20"/>
+            </AbsoluteLayout>
+    </Grid>
+    </ScrollView>
+</ContentPage>

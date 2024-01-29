@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.NewPage1"
+             Title="Connectivity">
+    <VerticalStackLayout
+        Spacing="20">
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            >
+
+            <Label
+                Text="Connection Status"
+                VerticalOptions="Center" 
+                HorizontalOptions="End" />
+            <Ellipse x:Name="StatusInd"
+                Fill="Red" 
+                WidthRequest="30"
+                HeightRequest="30"
+                HorizontalOptions="End" />
+        </HorizontalStackLayout>
+        
+        <Label 
+            Text="Enter Server IP Adress"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry x:Name="IPAdress"
+               Placeholder="0.0.0.0"
+               TextChanged="OnEntryIPChanged"
+               Completed="OnEntryCompleted"
+               HorizontalOptions="Center" />
+        
+        <Label x:Name="IpError"
+            Text="Invalid Ip Adress"
+            IsVisible="false"
+            TextColor="Red"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+
+        <Label 
+            Text="Enter Port"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry x:Name="Path"
+               Placeholder="00000"
+               TextChanged="Path_TextChanged"
+               Completed="Path_Completed"
+               HorizontalOptions="Center" />
+
+        <Picker x:Name="picker"
+        Title="Select Data Refresh Rate(ms)"
+                HorizontalOptions="Center"
+                SelectedIndexChanged="picker_SelectedIndexChanged">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>100</x:String>
+                    <x:String>200</x:String>
+                    <x:String>500</x:String>
+                    <x:String>1000</x:String>
+                    <x:String>1500</x:String>
+                    <x:String>2000</x:String>
+                    <x:String>3000</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            Spacing="10">
+            <Label 
+            Text="Current Refresh Rate: "
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <Label 
+            Text="{DynamicResource Delay}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        </HorizontalStackLayout>
+        <Button x:Name="Connect"
+                Text="Connect"
+                HorizontalOptions="Center"
+                Clicked="Conncect_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
